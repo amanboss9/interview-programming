@@ -18,7 +18,6 @@ class MultiThreadTokenBucketFilter {
     }
 
     private void startDaemon(){
-
         while(true){
             synchronized (this){
                 if(tokens < MAX_TOKENS)
@@ -39,13 +38,9 @@ class MultiThreadTokenBucketFilter {
                 this.wait();
 
             tokens--;
-
             System.out.println(String.format("Granting %s token at: %s", Thread.currentThread().getName(), System.currentTimeMillis()/1000));
-
         }
     }
-
-
 }
 
 class TokenBucketFilterFactory{
@@ -84,7 +79,6 @@ class MultiThreadTokenBucketDemo{
             t.setName("Thread_"+i);
             threadList.add(t);
         }
-
 
         for(Thread t: threadList)
             t.start();
