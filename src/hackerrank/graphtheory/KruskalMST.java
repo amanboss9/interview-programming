@@ -12,7 +12,6 @@ class KruskalMST {
      * The function is expected to return an INTEGER.
      * The function accepts WEIGHTED_INTEGER_GRAPH g as parameter.
      */
-
     /*
      * For the weighted graph, <name>:
      *
