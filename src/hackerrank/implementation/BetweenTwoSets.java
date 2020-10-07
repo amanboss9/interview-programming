@@ -2,6 +2,7 @@ package hackerrank.implementation;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.*;
 
 public class BetweenTwoSets {
@@ -36,7 +37,7 @@ public class BetweenTwoSets {
     private static final Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        BufferedWriter bw = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         String[] nm = scan.nextLine().split(" ");
 
